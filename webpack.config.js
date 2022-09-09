@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const pages = ['main', 'contacts'];
 
 module.exports = {
+  target: 'web',
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
   entry: {
     index: './pages/contacts/main.js',
@@ -13,6 +14,8 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: 'assets/[hash][ext][query]',
+    clean: true,
   },
   optimization: {
     splitChunks: {
@@ -23,8 +26,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|jpe?g|gif|svg)$/i,
-        type: 'asset',
+        test: /\.(img|svg|jpg|jpeg|gif|png)$/i,
+        type: 'asset/resource',
       },
       {
         test: /\.(sass|less|css|scss)$/,
@@ -52,7 +55,7 @@ module.exports = {
         },
       },
       {
-        resourceQuery: /template/,
+        test: /\.(html)$/,
         loader: 'html-loader',
       },
     ],
@@ -77,12 +80,9 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
 
-  devtool: 'source-map',
+  devtool: 'eval-source-map',
   devServer: {
-    static: {
-      directory: path.join(__dirname, './dist'),
-      watch: true,
-    },
+    static: true,
     hot: true,
   },
 };
