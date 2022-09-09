@@ -1,0 +1,27 @@
+@import './abstracts/mixins';
+@import './abstracts/variables';
+@import './base/_normalize.css';
+@import './/base/fonts';
+@import './components/buttons';
+@import './layout/footer';
+@import './layout/header';
+@import './pages/home';
+
+*,
+body {
+  font-family: 'Mont-Regular';
+  font-weight: 600;
+  font-size: 24px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.noscroll {
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
