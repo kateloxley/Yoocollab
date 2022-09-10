@@ -40,82 +40,66 @@
       display: none;
     }
   }
-  &__burger-container {
-    display: none;
 
-    @media (max-width: 720px) {
-      display: block;
-      top: 18px;
-      right: 15px;
-      width: 1.6rem;
-      height: 1rem;
-      position: absolute;
-      cursor: pointer;
-      z-index: 120;
-    }
-  }
-
-  &__burger {
-    @media (max-width: 720px) {
-      z-index: 5;
-      width: 18px;
-      height: 18px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      margin: 0 auto;
-      transition: all 0.3s ease 0s;
-    }
-  }
-
-  &__burger span {
-    @media (max-width: 720px) {
-      height: 2px;
-      display: block;
-      position: absolute;
-      width: 100%;
-      left: 0;
-      background-color: $black-color;
-      transition: all 0.3s ease 0s;
-    }
-  }
-
-  &__burger.active {
-    @media (max-width: 720px) {
-      transform: rotate(-90deg);
-      transition: all 0.3s ease 0s;
-    }
-  }
-
-  &__burger span.active {
-    @media (max-width: 720px) {
-      background-color: #f1cdb3;
-    }
-  }
-
-  &__burger span:nth-child(1) {
-    @media (max-width: 720px) {
-      top: 6px;
-    }
-  }
-
-  &__burger span:nth-child(3) {
-    @media (max-width: 720px) {
-      top: 12px;
-    }
-  }
-  &__close {
-    display: none;
-  }
   &__phone {
     display: none;
     @media (max-width: 720px) {
       display: block;
       position: absolute;
+      background: none;
+      border: none;
+      cursor: pointer;
       top: 14px;
       right: 50px;
       z-index: 200;
+    }
+  }
+
+  &__close {
+    display: none;
+  }
+
+  &__close.active {
+    @media (max-width: 720px) {
+      display: block;
+      position: absolute;
+      cursor: pointer;
+      right: 15px;
+      top: 15px;
+      width: 25px;
+      height: 25px;
+      opacity: 1;
+      z-index: 120;
+    }
+  }
+
+  &__close:hover {
+    @media (max-width: 720px) {
+      opacity: 0.3;
+    }
+  }
+
+  &__close:before,
+  &__close:after {
+    @media (max-width: 720px) {
+      position: absolute;
+      left: 11px;
+      content: '';
+      height: 22px;
+      width: 2px;
+      background-color: $black-color;
+    }
+  }
+
+  &__close:before {
+    @media (max-width: 720px) {
+      transform: rotate(45deg);
+    }
+  }
+
+  &__close:after {
+    @media (max-width: 720px) {
+      transform: rotate(-45deg);
     }
   }
 }
@@ -156,6 +140,13 @@
     @media (max-width: 720px) {
       margin-bottom: 0;
     }
+  }
+}
+
+.menu.active {
+  @media (max-width: 720px) {
+    position: fixed;
+    top: 0px;
   }
 }
 

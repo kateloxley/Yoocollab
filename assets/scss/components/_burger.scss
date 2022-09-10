@@ -1,0 +1,51 @@
+.burger {
+  display: none;
+
+  @media (max-width: 720px) {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    top: 13px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  &__container {
+    @media (max-width: 720px) {
+      z-index: 5;
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      margin: 0 auto;
+      transition: all 0.3s ease 0s;
+    }
+  }
+
+  &__item {
+    @media (max-width: 720px) {
+      height: 2px;
+      display: block;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      background-color: $black-color;
+      transition: all 0.3s ease 0s;
+    }
+  }
+
+  &__item:nth-child(1) {
+    @media (max-width: 720px) {
+      top: 6px;
+    }
+  }
+
+  &__item:nth-child(3) {
+    @media (max-width: 720px) {
+      top: 12px;
+    }
+  }
+}
