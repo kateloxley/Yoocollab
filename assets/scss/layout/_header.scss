@@ -17,11 +17,6 @@
       margin: 5px 0 0 15px;
     }
   }
-  &__logo-img {
-    @media (max-width: 720px) {
-      width: 100px;
-    }
-  }
 
   &__col {
     display: flex;
