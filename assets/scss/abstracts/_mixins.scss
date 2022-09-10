@@ -1,3 +1,7 @@
 @mixin padding($padding-tb, $padding-lr) {
   padding: $padding-tb $padding-lr;
 }
+
+@mixin color($color) {
+  color: $color;
+}
