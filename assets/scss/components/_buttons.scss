@@ -23,3 +23,31 @@
     box-shadow: 0px 4px 20px rgba(255, 79, 60, 0.04);
   }
 }
+
+.white-btn {
+  background: $white-color;
+  color: $main-color;
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 14px 15px;
+  transition: 0.2s ease;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background: #fef9f9;
+    box-shadow: 0px 4px 20px rgba(192, 192, 192, 0.3);
+    transition: 0.2s ease;
+  }
+  &:active {
+    background: #fef9f9;
+    border: 1px solid #fe6a5b;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  }
+  &:disabled {
+    opacity: 0.7;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+  }
+}
