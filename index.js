@@ -34,7 +34,7 @@ const openMore = (event) => {
   document
     .querySelectorAll('.provided-services__item')
     .forEach((el) => el.classList.remove('hide'));
-  seeMore.style.dislay = 'none';
+  seeMore.style.display = 'none';
 };
 
 seeMore.addEventListener('click', openMore);
