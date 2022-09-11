@@ -3,5 +3,10 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 20px;
+  padding: 20px 90px;
+  max-width: 1440px;
+  margin: 0 auto !important;
+  @media (max-width: 720px) {
+    padding: 20px;
+  }
 }

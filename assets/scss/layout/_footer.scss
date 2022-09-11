@@ -3,6 +3,7 @@
   background: $dark-background;
   &__content {
     display: flex;
+    align-items: unset !important;
     width: 100%;
     padding: 50px 20px;
     @media (max-width: 720px) {

@@ -1,0 +1,212 @@
+.services {
+  &__content {
+    padding: 70px 90px;
+    @media (max-width: 720px) {
+      padding: 16px 16px;
+    }
+  }
+  &__table {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    @media (max-width: 720px) {
+      flex-direction: column;
+    }
+  }
+  &__col {
+    max-width: 582px;
+    width: 100%;
+    @media (max-width: 720px) {
+      padding-bottom: 35px;
+    }
+  }
+  &__col2.flex-end {
+  }
+  &__col2 {
+    display: flex;
+
+    width: 100%;
+  }
+  &__col2.flex-end {
+    justify-content: flex-end;
+  }
+  &__col2.flex-start {
+    justify-content: flex-start;
+  }
+  &__text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: $black-color;
+    max-width: 582px;
+    width: 100%;
+    @media (max-width: 720px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  &__img {
+    @media (max-width: 1140px) {
+      width: 100%;
+    }
+  }
+}
+
+.outstaffing {
+  &__content {
+    padding-top: 30px;
+  }
+}
+
+.outsourcing {
+  &__table {
+    flex-direction: row-reverse;
+    @media (max-width: 720px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.industries {
+  background: $dark-background;
+  &__content {
+    justify-content: center;
+  }
+  &__table {
+    flex-direction: column;
+    max-width: 804px;
+  }
+  &__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__col2 {
+    align-items: center;
+    justify-content: center;
+  }
+  &__title,
+  &__text {
+    margin: 0;
+    color: $white-color;
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__img {
+    @media (max-width: 1140px) {
+      width: 100%;
+    }
+    @media (max-width: 720px) {
+      display: none;
+    }
+    margin-top: 48px;
+    margin-bottom: 52px;
+  }
+  &__img_mobile {
+    display: none;
+    @media (max-width: 720px) {
+      display: block;
+      max-width: 343px;
+      width: 100%;
+      margin: 24px 0 32px 0;
+    }
+  }
+}
+
+.provided-services {
+  &__content {
+    flex-direction: column;
+    padding-bottom: 70px;
+  }
+  &__title {
+    color: $grey-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    @media (max-width: 1140px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  &__table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 22px;
+    @media (max-width: 720px) {
+      justify-content: center;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $white-color;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    width: 292px;
+    height: 44px;
+    margin-bottom: 12px;
+    text-align: center;
+    transition: 0.2s ease;
+    @media (max-width: 1365px) {
+      width: 232px;
+    }
+    @media (max-width: 1124px) {
+      width: 180px;
+    }
+    @media (max-width: 917px) {
+      width: 130px;
+      height: auto;
+      min-height: 44px;
+    }
+    @media (max-width: 720px) {
+      width: 293px;
+      height: 44px;
+    }
+  }
+}
+
+.web-dev {
+  &__table {
+    @media (max-width: 720px) {
+      flex-direction: column-reverse;
+    }
+  }
+  &__col {
+    width: 100%;
+  }
+  &__col2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  &__items {
+    display: flex;
+    justify-content: center;
+    max-width: 460px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 225px;
+
+    @media (max-width: 1100px) {
+      width: 160px;
+    }
+  }
+  &__icon {
+    @media (max-width: 1100px) {
+      width: 160px;
+    }
+  }
+}
+
+.mobile-tech {
+  &__content {
+    padding-bottom: 48px;
+  }
+}
