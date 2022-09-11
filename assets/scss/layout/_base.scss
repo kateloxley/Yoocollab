@@ -3,10 +3,17 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 20px 90px;
-  max-width: 1440px;
+  padding: 20px 0;
+  max-width: 1260px;
   margin: 0 auto !important;
   @media (max-width: 720px) {
     padding: 20px;
   }
+}
+
+.readmore {
+  font-weight: 700;
+  color: $main-color;
+  border-bottom: 1px solid $main-color;
+  cursor: pointer;
 }
