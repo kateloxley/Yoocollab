@@ -28,3 +28,13 @@ headerBurger.addEventListener('click', () => {
 headerLinks.forEach((el) => el.addEventListener('click', closeMenu));
 
 headerClose.addEventListener('click', closeMenu);
+
+const seeMore = document.querySelector('.provided-services__more');
+const openMore = (event) => {
+  document
+    .querySelectorAll('.provided-services__item')
+    .forEach((el) => el.classList.remove('hide'));
+  seeMore.style.dislay = 'none';
+};
+
+seeMore.addEventListener('click', openMore);

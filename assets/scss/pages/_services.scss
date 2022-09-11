@@ -138,6 +138,9 @@
     margin-bottom: 22px;
     @media (max-width: 720px) {
       justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0;
     }
   }
   &__item {
@@ -167,6 +170,15 @@
       width: 293px;
       height: 44px;
     }
+  }
+  &__more {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $main-color;
+    border-bottom: 1px solid $main-color;
+    cursor: pointer;
+    margin-top: 0;
   }
 }
 
@@ -208,5 +220,11 @@
 .mobile-tech {
   &__content {
     padding-bottom: 48px;
+  }
+}
+
+.hide {
+  @media (max-width: 720px) {
+    display: none;
   }
 }
