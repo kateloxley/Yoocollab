@@ -1,0 +1,131 @@
+.blog {
+  &__content {
+    flex-direction: column;
+    padding-bottom: 70px;
+    @media (max-width: 720px) {
+      padding-bottom: 48px;
+    }
+  }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 52px;
+    @media (max-width: 720px) {
+      margin-bottom: 32px;
+    }
+  }
+  &__top-img {
+    @media (max-width: 720px) {
+      max-height: 137px;
+    }
+  }
+  &__text-container {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    @media (max-width: 720px) {
+      left: 32%;
+    }
+  }
+  &__title,
+  &__undertext {
+    margin: 0;
+    text-align: center;
+  }
+  &__undertext {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    @media (max-width: 720px) {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    @media (max-width: 720px) {
+      justify-content: space-around;
+      margin-bottom: 24px;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 293px;
+    margin-bottom: 32px;
+    @media (max-width: 720px) {
+      margin-bottom: 24px;
+      width: 160px;
+    }
+  }
+  &__item:nth-child(9),
+  &__item:nth-child(10),
+  &__item:nth-child(11),
+  &__item:nth-child(12) {
+    display: none;
+  }
+  &__item-title {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 16px 0 6px 0;
+    @media (max-width: 720px) {
+      font-size: 12px;
+      line-height: 15px;
+      margin: 8px 0 6px 0;
+    }
+  }
+  &__text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 12px;
+    @media (max-width: 720px) {
+      margin-bottom: 8px;
+    }
+  }
+  &__date {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: $grey-color;
+  }
+  &__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 720px) {
+      display: none;
+    }
+  }
+  &__page {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: $grey-color;
+    margin: 0 8px;
+  }
+  &__page_active {
+    color: $black-color;
+  }
+  &__arrow {
+    width: 20px;
+  }
+  &__arrow.left {
+    top: 3px;
+    position: relative;
+  }
+  &__pagination_mobile {
+    display: none;
+    @media (max-width: 720px) {
+      display: block;
+    }
+  }
+}

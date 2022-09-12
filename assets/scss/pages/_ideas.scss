@@ -7,7 +7,13 @@
     top: 70px;
     padding: 32px 90px 0 90px;
     @media (max-width: 720px) {
-      padding: 32px 16px 0 16px;
+      top: 20px;
+      padding: 32px 16px;
+    }
+  }
+  &__container {
+    @media (max-width: 720px) {
+      margin-bottom: 32px;
     }
   }
   &__title {
@@ -30,8 +36,10 @@
   &__content {
     justify-content: center;
     width: unset;
+    padding-bottom: 90px;
     @media (max-width: 720px) {
       width: 100%;
+      padding-bottom: 48px;
     }
   }
   &__form {
