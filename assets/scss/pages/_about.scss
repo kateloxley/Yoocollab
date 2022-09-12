@@ -76,19 +76,6 @@
 }
 
 .top-banner {
-  // background: url('../images/about_back.png') no-repeat;
-  // background-size: auto 500px;
-  // background-position: top;
-  // margin-bottom: 255px;
-
-  // @media (max-width: 720px) {
-  //   margin-bottom: 120px;
-  //   background-position: top;
-  //   background-size: auto 290px;
-  // }
-  // @media (max-width: 400px) {
-  //   background-size: auto 139px;
-  // }
   &__content {
     align-items: center;
     width: 692px;
@@ -367,5 +354,5 @@
 }
 
 .more {
-  display: none;
+  display: none !important;
 }

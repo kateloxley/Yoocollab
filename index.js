@@ -71,6 +71,16 @@ const readMore = (event) => {
       .querySelectorAll('.benefits__item-text')
       .forEach((el) => el.classList.remove('more'));
   }
+  if (
+    event.target.classList.contains('readmore') &&
+    event.target.classList.contains('ideas-banner__more')
+  ) {
+    document.querySelector('.ideas-banner__more').style.display = 'none';
+    document.querySelector('.ideas-banner__dots').style.display = 'none';
+    document
+      .querySelectorAll('.ideas-banner__text_mobile')
+      .forEach((el) => el.classList.remove('more'));
+  }
 };
 
 more.forEach((el) => el.addEventListener('click', readMore));
