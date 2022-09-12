@@ -1,0 +1,40 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  background: $lightgrey-color;
+  &__input {
+    background: $white-color;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 14px 0 14px 24px;
+    outline: none;
+    margin-bottom: 28px;
+    transition: 0.2s ease;
+  }
+  &__label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+  &__input::placeholder {
+    color: $grey-color;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  &__input:focus {
+    transition: 0.2s ease;
+    border: 1px solid #2ed8ea;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  &__input:hover {
+    transition: 0.2s ease;
+    border: 1px solid #8d8d8d;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  &__input:disabled {
+    border: 2px solid #e3e8ee;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+}

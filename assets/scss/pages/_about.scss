@@ -3,6 +3,8 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 150px;
+    height: 100%;
     @media (max-width: 720px) {
       padding: 0 16px;
     }
@@ -74,18 +76,19 @@
 }
 
 .top-banner {
-  background: url('../images/about_back.png') no-repeat;
-  background-size: auto 495px;
-  background-position: top;
-  margin-bottom: 255px;
+  // background: url('../images/about_back.png') no-repeat;
+  // background-size: auto 500px;
+  // background-position: top;
+  // margin-bottom: 255px;
 
-  @media (max-width: 720px) {
-    background-size: auto 240px;
-    margin-bottom: 120px;
-  }
-  @media (max-width: 390px) {
-    background-size: auto 129px;
-  }
+  // @media (max-width: 720px) {
+  //   margin-bottom: 120px;
+  //   background-position: top;
+  //   background-size: auto 290px;
+  // }
+  // @media (max-width: 400px) {
+  //   background-size: auto 139px;
+  // }
   &__content {
     align-items: center;
     width: 692px;
@@ -97,6 +100,12 @@
       width: 343px;
       min-height: 375px;
       top: 75px;
+      padding: 32px 16px 0 16px;
+    }
+    @media (max-width: 400px) {
+      width: 343px;
+      min-height: 375px;
+      top: 25px;
       padding: 32px 16px 0 16px;
     }
   }

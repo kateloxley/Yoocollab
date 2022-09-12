@@ -1,0 +1,13 @@
+.ideas-banner {
+  &__content {
+    align-items: center;
+    width: 830px;
+    height: 100%;
+    position: relative;
+    top: 70px;
+    padding: 32px 90px 0 90px;
+  }
+  &__title {
+    margin: 0;
+  }
+}

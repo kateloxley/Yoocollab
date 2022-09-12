@@ -47,45 +47,53 @@
 
       <section class="contacts">
         <div class="contacts__top">
-          <h1 class="contacts__main-title title">Contact us</h1>
-          <img
-            class="contacts__img"
-            src="../../assets/images/contacts_man.png"
-          />
+          <div class="contacts__top-content">
+            <h1 class="contacts__main-title title">Contact us</h1>
+            <img
+              class="contacts__img"
+              src="../../assets/images/contacts_man.png"
+            />
+          </div>
         </div>
         <div class="contacts__content content">
           <div class="contacts__container">
-            <form class="contacts__form">
-              <label class="contacts__label" for="Name">Name</label>
+            <form class="contacts__form form">
+              <label class="contacts__label form__label" for="Name">Name</label>
               <input
-                class="contacts__input"
+                class="contacts__input form__input"
                 id="name"
                 type="text"
                 name="name"
                 placeholder="Name"
               />
 
-              <label class="contacts__label" for="email">E-mail</label>
+              <label class="contacts__label form__label" for="email"
+                >E-mail</label
+              >
               <input
-                class="contacts__input"
+                class="contacts__input form__input"
                 id="email"
                 type="email"
                 name="email"
                 placeholder="E-mail"
               />
 
-              <label class="contacts__label" for="tel">Phone number</label>
+              <label class="contacts__label form__label" for="tel"
+                >Phone number</label
+              >
               <input
-                class="contacts__input"
+                class="contacts__input form__input"
                 id="tel"
                 type="tel"
                 name="tel"
                 placeholder="Phone number"
               />
 
-              <label class="contacts__label" for="message">Message</label>
+              <label class="contacts__label form__label" for="message"
+                >Message</label
+              >
               <textarea
-                class="contacts__input contacts__textarea"
+                class="contacts__input form__input contacts__textarea"
                 id="message"
                 name="message"
                 placeholder="Type something..."

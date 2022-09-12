@@ -17,3 +17,10 @@
   border-bottom: 1px solid $main-color;
   cursor: pointer;
 }
+
+.top-back {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -5;
+}
