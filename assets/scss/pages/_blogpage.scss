@@ -47,6 +47,13 @@
       margin: 0 0 12px 0;
     }
   }
+  &__text_red {
+    color: $main-color;
+    border-bottom: 1px solid $main-color;
+    @media (max-width: 885px) {
+      border-bottom: none;
+    }
+  }
   &__subtitle {
     font-weight: 800;
     font-size: 32px;
