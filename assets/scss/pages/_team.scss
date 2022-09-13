@@ -1,13 +1,20 @@
 .team {
   &__content {
     flex-direction: column;
+    padding-bottom: 90px;
+  }
+  &__container {
+    margin-bottom: 160px;
+  }
+  &__title {
+    margin-bottom: 0;
   }
   &__banner {
     position: relative;
     align-items: center;
     width: 1027px;
     height: 100%;
-    top: 120px;
+    top: 130px;
     padding: 32px 63px;
   }
   &__table {
@@ -19,14 +26,88 @@
     display: flex;
     flex-direction: column;
   }
+  &__col-title {
+    margin-bottom: 16px;
+  }
+  &__col-title,
+  &__number {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: $grey-color;
+  }
+  &__name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+  }
   &__item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 173px;
+    margin: 0 0 24px 0;
+  }
+  &__count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
   }
   &__number {
     border: none;
-    width: 15px;
+    outline: none;
+    max-width: 30px;
+    text-align: center;
+  }
+  &__number_active {
+    color: $black-color;
+  }
+  &__minus,
+  &__plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: 800;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+  &__minus {
+    border: 2px solid $grey-color;
+    color: $grey-color;
+  }
+  &__plus {
+    border: 2px solid $black-color;
+    color: $white-color;
+    background: $black-color;
+  }
+  &__minus_active {
+    border: 2px solid $black-color;
+    color: $white-color;
+    background: $black-color;
+  }
+  &__clear {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: $main-color;
+  }
+  &__clear a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: $main-color;
+    text-decoration: none;
+    border-bottom: 1px solid $main-color;
+  }
+  &__clear a:hover,
+  &__clear a:active {
+    border-bottom: 1px dashed $main-color;
   }
 }
