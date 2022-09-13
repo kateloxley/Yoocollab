@@ -381,6 +381,98 @@
           </div>
         </div>
       </footer>
+      <section class="contact-details">
+        <div class="contact-details__container">
+          <div class="contact-details__content">
+            <h2 class="contact-details__title title">
+              Leave your contact details and we will contact you
+            </h2>
+            <span class="contact-details__close"></span>
+
+            <p class="contact-details__text">
+              Your personal data wil be processed securely and won’t be
+              avalaible to third parties.
+            </p>
+            <form
+              type="submit"
+              action="POST"
+              class="contact-details__form form"
+            >
+              <label class="contact-details__label form__label" for="Name"
+                >Name</label
+              >
+              <input
+                class="contact-details__input form__input"
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Name"
+              />
+              <div class="form__error">
+                <img
+                  class="form__error-img"
+                  class=""
+                  src="../../assets/images/error.svg"
+                  alt=""
+                />
+                <p class="form__error-message">Error message</p>
+              </div>
+
+              <label class="contact-details__label form__label" for="email"
+                >E-mail</label
+              >
+              <input
+                class="contact-details__input form__input"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+              <div class="form__error">
+                <img
+                  class="form__error-img"
+                  class=""
+                  src="../../assets/images/error.svg"
+                  alt=""
+                />
+                <p class="form__error-message">Error message</p>
+              </div>
+
+              <label class="contact-details__label form__label" for="tel"
+                >Phone number</label
+              >
+              <input
+                class="contact-details__input form__input"
+                id="tel"
+                type="tel"
+                name="tel"
+                placeholder="Phone number"
+              />
+              <div class="form__error">
+                <img
+                  class="form__error-img"
+                  src="../../assets/images/error.svg"
+                  alt="error"
+                />
+                <p class="form__error-message">Error message</p>
+              </div>
+
+              <label class="contact-details__label form__label" for="message"
+                >Tell us about your project</label
+              >
+              <textarea
+                class="contact-details__input form__input contact-details__textarea"
+                id="message"
+                name="message"
+                placeholder="Type something..."
+              ></textarea>
+              <button type="submit" class="contact-details__btn red-btn">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>

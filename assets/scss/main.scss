@@ -27,16 +27,21 @@ body {
 
 .noscroll {
   overflow: hidden;
+  position: fixed;
   transition: all 0.3s;
 }
 
 .page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+}
+
+.page::-webkit-scrollbar {
+  display: none;
 }
 
 *,
