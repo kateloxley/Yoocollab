@@ -84,3 +84,12 @@ const readMore = (event) => {
 };
 
 more.forEach((el) => el.addEventListener('click', readMore));
+
+document.querySelector('.contacts__title').addEventListener('click', () => {
+  document
+    .querySelectorAll('.form__error')
+    .forEach((el) => el.classList.add('error'));
+  document
+    .querySelectorAll('.form__input')
+    .forEach((el) => el.classList.add('error'));
+});

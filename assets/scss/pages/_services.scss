@@ -156,10 +156,10 @@
       width: 232px;
     }
     @media (max-width: 1124px) {
-      width: 180px;
+      width: 200px;
     }
     @media (max-width: 917px) {
-      width: 130px;
+      width: 160px;
       height: auto;
       min-height: 44px;
     }
@@ -169,13 +169,17 @@
     }
   }
   &__more {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: $main-color;
-    border-bottom: 1px solid $main-color;
-    cursor: pointer;
-    margin-top: 0;
+    display: none;
+    @media (max-width: 720px) {
+      display: block;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: $main-color;
+      border-bottom: 1px solid $main-color;
+      cursor: pointer;
+      margin-top: 0;
+    }
   }
 }
 

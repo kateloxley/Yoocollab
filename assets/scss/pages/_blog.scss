@@ -59,6 +59,9 @@
     justify-content: flex-start;
     width: 293px;
     margin-bottom: 32px;
+    cursor: pointer;
+    text-decoration: none;
+    color: $black-color;
     @media (max-width: 720px) {
       margin-bottom: 24px;
       width: 160px;
@@ -68,7 +71,13 @@
   &__item:nth-child(10),
   &__item:nth-child(11),
   &__item:nth-child(12) {
-    display: none;
+    @media (max-width: 720px) {
+      display: none;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: $black-color;
   }
   &__item-title {
     font-weight: 800;

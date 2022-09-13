@@ -64,6 +64,15 @@
                 name="name"
                 placeholder="Name"
               />
+              <div class="form__error">
+                <img
+                  class="form__error-img"
+                  class=""
+                  src="../../assets/images/error.svg"
+                  alt=""
+                />
+                <p class="form__error-message">Error message</p>
+              </div>
 
               <label class="contacts__label form__label" for="email"
                 >E-mail</label
@@ -75,6 +84,15 @@
                 name="email"
                 placeholder="E-mail"
               />
+              <div class="form__error">
+                <img
+                  class="form__error-img"
+                  class=""
+                  src="../../assets/images/error.svg"
+                  alt=""
+                />
+                <p class="form__error-message">Error message</p>
+              </div>
 
               <label class="contacts__label form__label" for="tel"
                 >Phone number</label
@@ -86,6 +104,14 @@
                 name="tel"
                 placeholder="Phone number"
               />
+              <div class="form__error">
+                <img
+                  class="form__error-img"
+                  src="../../assets/images/error.svg"
+                  alt="error"
+                />
+                <p class="form__error-message">Error message</p>
+              </div>
 
               <label class="contacts__label form__label" for="message"
                 >Message</label
@@ -95,6 +121,7 @@
                 id="message"
                 name="message"
                 placeholder="Type something..."
+                required
               ></textarea>
               <button class="contacts__btn red-btn">Send</button>
             </form>

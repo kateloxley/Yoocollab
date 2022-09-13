@@ -3,9 +3,10 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 200px;
     height: 100%;
     @media (max-width: 720px) {
+      margin-bottom: 150px;
       padding: 0 16px;
     }
   }
@@ -239,6 +240,9 @@
 
 .yooco-team {
   margin-top: 90px;
+  @media (max-width: 720px) {
+    margin-top: 32px;
+  }
   &__title {
     text-align: center;
   }
@@ -246,7 +250,6 @@
   &__content {
     display: flex;
     justify-content: space-between;
-    height: 141px;
     width: 100%;
     @media (max-width: 720px) {
       align-items: center;
@@ -310,6 +313,9 @@
 
 .values {
   margin-top: 90px;
+  @media (max-width: 720px) {
+    margin-top: 32px;
+  }
   &__content {
     display: flex;
     flex-direction: column;

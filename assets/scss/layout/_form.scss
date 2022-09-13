@@ -38,6 +38,37 @@
     border: 1px solid #e3e8ee;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   }
+  &__input.error {
+    border: 1px solid #f43838;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  &__error {
+    opacity: 0;
+    z-index: -5;
+    height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    bottom: 15px;
+  }
+  &__error.error {
+    opacity: 1;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+  }
+  &__error-message {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #f03232;
+    margin: 0 0 0 4px;
+  }
+}
+
+input:required:invalid {
+  border: 1px solid #f43838;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 // input[type='checkbox'] {

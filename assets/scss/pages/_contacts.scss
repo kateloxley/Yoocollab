@@ -28,7 +28,12 @@
       padding: 36px 16px;
     }
   }
-
+  &__btn {
+    max-width: 135px;
+    @media (max-width: 800px) {
+      max-width: unset;
+    }
+  }
   &__textarea {
     height: 158px;
     resize: none;
@@ -38,6 +43,9 @@
     display: flex;
     max-width: 1260px;
     width: 100%;
+    @media (max-width: 1260px) {
+      padding: 0 16px;
+    }
   }
   &__top {
     background: $dark-background;
