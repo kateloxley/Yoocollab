@@ -39,6 +39,7 @@
     resize: none;
   }
   &__top-content {
+    background: $dark-background;
     position: relative;
     display: flex;
     max-width: 1260px;
@@ -48,10 +49,15 @@
     }
   }
   &__top {
-    background: $dark-background;
     width: 100%;
     display: flex;
     justify-content: center;
+    @media (max-width: 1260px) {
+      padding: 0 20px;
+    }
+    @media (max-width: 720px) {
+      padding: 0 16px;
+    }
   }
   &__img {
     position: absolute;
@@ -76,7 +82,7 @@
   }
   &__main-title {
     color: $white-color;
-    padding: 92px 0;
+    padding: 92px 0 92px 108px;
     margin-bottom: 0;
     @media (max-width: 800px) {
       font-size: 24px;

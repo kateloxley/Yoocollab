@@ -17,6 +17,7 @@ module.exports = {
     careers: './pages/careers/main.js',
     blogpage: './pages/careers/main.js',
     team: './pages/team/main.js',
+    allvacancies: './pages/allvacancies/main.js',
   },
   output: {
     filename: '[name].js',
@@ -122,6 +123,12 @@ module.exports = {
       inject: true,
       chunks: ['team'],
       filename: 'team.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './pages/allvacancies/allvacancies.html',
+      inject: true,
+      chunks: ['allvacancies'],
+      filename: 'allvacancies.html',
     }),
     new MiniCssExtractPlugin(),
   ],

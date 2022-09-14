@@ -1,0 +1,19 @@
+.allvacancies-banner {
+  &__top {
+    background: $dark-background;
+    width: 100%;
+    position: relative;
+    padding: 52px 0 52px 108px;
+  }
+  &__main-title {
+    color: $white-color;
+  }
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  &__container {
+    display: flex;
+  }
+}
