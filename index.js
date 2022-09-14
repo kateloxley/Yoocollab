@@ -140,34 +140,40 @@ document.querySelectorAll('.team__col').forEach((el) =>
   })
 );
 
-document.querySelector('.team__btn').addEventListener('click', (event) => {
-  event.preventDefault();
-  document.querySelector('.contact-details').classList.add('active');
-  page.classList.add('noscroll');
-});
-
-document
-  .querySelector('.contact-details__btn')
-  .addEventListener('click', (event) => {
+if (document.querySelector('.team__btn')) {
+  document.querySelector('.team__btn').addEventListener('click', (event) => {
     event.preventDefault();
-    document.querySelector(
-      '.contact-details__content'
-    ).innerHTML = `<div class="contact-details__onsubmit-container"> 
+    document.querySelector('.contact-details').classList.add('active');
+    page.classList.add('noscroll');
+  });
+}
+
+if (document.querySelector('.contact-details__btn')) {
+  document
+    .querySelector('.contact-details__btn')
+    .addEventListener('click', (event) => {
+      event.preventDefault();
+      document.querySelector(
+        '.contact-details__content'
+      ).innerHTML = `<div class="contact-details__onsubmit-container"> 
     <span class="contact-details__close"></span>
     <img src=${onsubmit} alt="" />
     <p class="contact-details__onsubmit-message">Thank you for choosing us as your trusted source!</p>
     </div>`;
-  });
+    });
+}
 
 const contactDetails = document.querySelector('.contact-details');
 
-contactDetails.addEventListener('click', (event) => {
-  console.log(event.target);
-  if (
-    event.target.classList.contains('active') ||
-    event.target.classList.contains('contact-details__close')
-  ) {
-    contactDetails.classList.remove('active');
-    page.classList.remove('noscroll');
-  }
-});
+if (contactDetails) {
+  contactDetails.addEventListener('click', (event) => {
+    console.log(event.target);
+    if (
+      event.target.classList.contains('active') ||
+      event.target.classList.contains('contact-details__close')
+    ) {
+      contactDetails.classList.remove('active');
+      page.classList.remove('noscroll');
+    }
+  });
+}
