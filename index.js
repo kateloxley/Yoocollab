@@ -177,3 +177,19 @@ if (contactDetails) {
     }
   });
 }
+
+const filterMenu = document.querySelector('.allvacancies__col');
+const filterBtn = document.querySelector('.allvacancies__filter-btn_mobile');
+const filterBack = document.querySelector('.allvacancies__back-container');
+
+if (filterBtn) {
+  filterBtn.addEventListener('click', () => {
+    filterMenu.classList.toggle('active');
+  });
+}
+
+if (filterBack) {
+  filterBack.addEventListener('click', () => {
+    filterMenu.classList.toggle('active');
+  });
+}
