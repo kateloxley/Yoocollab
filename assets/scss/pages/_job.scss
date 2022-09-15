@@ -1,0 +1,31 @@
+.job {
+  &__content {
+    flex-direction: column;
+    max-width: 830px;
+    padding-bottom: 48px;
+  }
+  &__subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 48px 0 35px 0;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    @media (max-width: 720px) {
+      margin: 24px 0 24px 0;
+    }
+  }
+  &__text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0;
+
+    @media (max-width: 720px) {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
