@@ -45,17 +45,20 @@
         </div>
       </header>
 
-      <section class="allvacancies-banner careers-banner">
-        <div class="allvacancies-banner__top">
+      <section class="allvacancies-banner careers-banner job-banner">
+        <div class="allvacancies-banner__top job-banner__top">
           <div class="allvacancies-banner__top-content">
             <div class="allvacancies-banner__text-container">
-              <div class="allvacancies-banner__input">
-        <h1 class="allvacancies-banner__main-title title">Node js.</h1>
+              
+                <div class="job-banner__title-container">
+                  <img class="job-banner__back" src="../../assets/images/arr_white.svg" alt="arrow_back">
+        <h1 class="job-banner__main-title title">Node js.</h1>
+        
+        </div>
             <img
-              class="allvacancies-banner__img"
+              class="allvacancies-banner__img job-banner__img"
               src="../../assets/images/allvacancies_back.png"
             />
-          </div>
         </div>
       </section>
 
@@ -80,6 +83,146 @@
                 <li class="job__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit;</li>
             </ol>
         </div>
+      </section>
+
+      <section class="job-form">
+        
+        
+        <form class="contacts__form form">
+          <div class="job-form__top-container">
+          <h3 class="job-form__title">Apply for this Job</h3>
+          <p class="job-form__required"><span class="job-form__star">*</span> Required</p>
+        </div>
+              <label class="contacts__label form__label" for="Name">First name<span class="job-form__star">*</span></label>
+              <input
+                class="contacts__input form__input"
+                id="name"
+                type="text"
+                name="name"
+                placeholder="First name"
+              />
+              <div class="form__error">
+                <img
+                  class="form__error-img"
+                  class=""
+                  src="../../assets/images/error.svg"
+                  alt=""
+                />
+                <p class="form__error-message">Error message</p>
+              </div>
+
+              <label class="contacts__label form__label" for="Name">Last name<span class="job-form__star">*</span></label>
+              <input
+                class="contacts__input form__input"
+                id="name"
+                type="text"
+                name="lastname"
+                placeholder="Last name"
+              />
+              <div class="form__error">
+                <img
+                  class="form__error-img"
+                  class=""
+                  src="../../assets/images/error.svg"
+                  alt=""
+                />
+                <p class="form__error-message">Error message</p>
+              </div>
+
+              <label class="contacts__label form__label" for="email"
+                >E-mail<span class="job-form__star">*</span></label
+              >
+              <input
+                class="contacts__input form__input"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+              <div class="form__error">
+                <img
+                  class="form__error-img"
+                  class=""
+                  src="../../assets/images/error.svg"
+                  alt=""
+                />
+                <p class="form__error-message">Error message</p>
+              </div>
+
+              <label class="contacts__label form__label" for="tel"
+                >Phone number<span class="job-form__star">*</span></label
+              >
+              <input
+                class="contacts__input form__input"
+                id="tel"
+                type="tel"
+                name="tel"
+                placeholder="Phone number"
+              />
+              <div class="form__error">
+                <img
+                  class="form__error-img"
+                  src="../../assets/images/error.svg"
+                  alt="error"
+                />
+                <p class="form__error-message">Error message</p>
+              </div>
+
+              <label class="contacts__label form__label" for="location"
+                >Location<span class="job-form__star">*</span></label
+              >
+              <input
+                class="contacts__input form__input"
+                id="location"
+                type="text"
+                name="location"
+                placeholder="Location"
+              />
+              <div class="form__error">
+                <img
+                  class="form__error-img"
+                  src="../../assets/images/error.svg"
+                  alt="error"
+                />
+                <p class="form__error-message">Error message</p>
+              </div>
+
+              <label class="contacts__label form__label" for="linkedin"
+                >Linkedin profile</label
+              >
+              <input
+                class="contacts__input form__input"
+                id="linkedin"
+                type="text"
+                name="linkedin"
+                placeholder="Linkedin profile"
+              />
+
+              <label class="contacts__label form__label" for="website"
+                >Website</label
+              >
+              <input
+                class="contacts__input form__input"
+                id="website"
+                type="text"
+                name="website"
+                placeholder="Website"
+              />
+
+              
+              <label class="job-form__label form__label form__input" for="fileinput"
+                >
+                <p class="job-form__text">Please attach your CV<span class="job-form__star">*</span></p>
+                <p class="job-form__text">File size: no more 3 mb. Formats: doc, docx, pdf, ppt, pptx</p>
+                <p class="job-form__text">Drag or <span class="job-form__text_another">another file</span></p> 
+                </label
+              >
+              <input class="job-form__file" id="fileinput" type="file">
+              <div class="job-form__button">
+                <button class="contacts__btn red-btn job-form__btn">Submit</button>
+              </div>
+              
+            </form>
       </section>
 
 <footer class="footer">

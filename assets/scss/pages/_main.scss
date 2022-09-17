@@ -1,5 +1,6 @@
 .banner {
   &__content {
+    position: relative;
     @media (max-width: 380px) {
       padding: 0 !important;
     }
@@ -45,9 +46,10 @@
   }
   &__img {
     position: absolute;
-    top: 0px;
-    right: 70px;
+    top: -100px;
+    right: 20px;
     z-index: -5;
+    transition: 0.2s;
     @media (max-width: 720px) {
       display: none;
       position: unset;
@@ -70,6 +72,10 @@
   width: 100%;
   margin-bottom: 160px;
   margin-top: 450px;
+  transition: 0.3s;
+  @media (max-width: 1070px) {
+    margin-top: 600px;
+  }
   @media (max-width: 720px) {
     margin-top: 0;
     margin-bottom: 30px;
@@ -85,6 +91,7 @@
     align-items: flex-end;
     justify-content: space-between;
     width: 100%;
+    column-gap: 30px;
     @media (max-width: 720px) {
       flex-direction: column-reverse;
       align-items: center;

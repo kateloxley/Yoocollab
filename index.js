@@ -1,5 +1,9 @@
 import './assets/scss/main.scss';
-import './assets/images/logo.svg';
+
+import Swiper, { Navigation } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const headerBurger = document.querySelector('.burger');
 const headerMenu = document.querySelector('.menu');
@@ -192,4 +196,51 @@ if (filterBack) {
   filterBack.addEventListener('click', () => {
     filterMenu.classList.toggle('active');
   });
+}
+
+const dropArea = document.querySelector('.job-form__label');
+
+const dropHandler = (event) => {
+  console.log('File(s) dropped');
+  event.preventDefault();
+
+  if (event.dataTransfer.items) {
+    [...event.dataTransfer.items].forEach((item, i) => {
+      if (item.kind === 'file') {
+        const file = item.getAsFile();
+        console.log(`… file[${i}].name = ${file.name}`);
+      }
+    });
+  } else {
+    [...event.dataTransfer.files].forEach((file, i) => {
+      console.log(`… file[${i}].name = ${file.name}`);
+    });
+  }
+};
+
+const dragOverHandler = (event) => {
+  console.log('File(s) in drop zone');
+  event.preventDefault();
+};
+
+const highlight = (e) => {
+  dropArea.classList.add('highlight');
+};
+const unhighlight = (e) => {
+  dropArea.classList.remove('highlight');
+};
+
+if (dropArea) {
+  ['dragenter', 'dragover'].forEach((eventName) => {
+    dropArea.addEventListener(eventName, highlight, false);
+  });
+  ['dragleave', 'drop'].forEach((eventName) => {
+    dropArea.addEventListener(eventName, unhighlight, false);
+  });
+  dropArea.addEventListener('dragenter', handlerFunction, false);
+  dropArea.addEventListener('dragleave', handlerFunction, false);
+  dropArea.addEventListener('dragover', handlerFunction, false);
+  dropArea.addEventListener('drop', handlerFunction, false);
+  dropArea.addEventListener('dragover', dragOverHandler);
+  dropArea.addEventListener('drop', dropHandler);
 }

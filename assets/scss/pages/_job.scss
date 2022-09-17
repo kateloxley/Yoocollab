@@ -1,3 +1,32 @@
+.job-banner {
+  &__title-container {
+    display: flex;
+  }
+  &__main-title {
+    margin-bottom: 0;
+    color: $white-color;
+    margin-left: 50px;
+    @media (max-width: 720px) {
+      margin-left: 5px;
+    }
+  }
+  &__top {
+    padding: 52px 0 132px 32px;
+    @media (max-width: 720px) {
+      padding: 32px 0 72px 16px;
+    }
+  }
+  &__back {
+    cursor: pointer;
+  }
+  &__img {
+    @media (max-width: 720px) {
+      display: block;
+      width: 96px;
+    }
+  }
+}
+
 .job {
   &__content {
     flex-direction: column;
@@ -5,7 +34,7 @@
     padding-bottom: 48px;
   }
   &__subtitle {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 16px;
     line-height: 20px;
     margin: 48px 0 35px 0;
@@ -27,5 +56,80 @@
       font-size: 16px;
       line-height: 24px;
     }
+  }
+}
+
+.job-form {
+  display: flex;
+  max-width: 1260px;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 90px;
+  margin: 0 auto;
+  @media (max-width: 720px) {
+    padding: 0 16px;
+  }
+  &__top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 60px;
+    @media (max-width: 720px) {
+      margin-bottom: 28px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+  }
+  &__required {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+    color: $grey-color;
+  }
+  &__file {
+    display: none;
+  }
+  &__label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+    cursor: pointer;
+    margin-bottom: 32px;
+  }
+  &__label.highlight {
+    transition: 0.2s ease;
+    border: 1px solid #2ed8ea;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  &__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: $grey-color;
+    margin: 0;
+    text-align: center;
+  }
+  &__text_another {
+    font-weight: 700;
+    border-bottom: 1px solid;
+    color: $black-color;
+  }
+  &__star {
+    color: $main-color;
+  }
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  &__btn {
+    width: 135px;
   }
 }
