@@ -4,6 +4,30 @@ import Swiper, { Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+Swiper.use([Navigation]);
+
+var swiper = new Swiper('.mySwiper', {
+  initialSlide: 1,
+  observer: true,
+  observeParents: true,
+  slidesPerView: 1,
+  speed: 700,
+  loop: true,
+  navigation: {
+    nextEl: '.trust__arrow.left',
+    prevEl: '.trust__arrow.right',
+  },
+});
+
+var swiper = new Swiper('.secondSwiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 10,
+  initialSlide: 1,
+  centeredSlides: false,
+  observer: true,
+  observeParents: true,
+  speed: 700,
+});
 
 const headerBurger = document.querySelector('.burger');
 const headerMenu = document.querySelector('.menu');

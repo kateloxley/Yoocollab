@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>Yoocollab - main page</title>
   </head>
   <body>
@@ -154,34 +158,88 @@
       <section class="trust section">
         <div class="trust__content content">
           <h2 class="trust__title title">We are trusted by</h2>
-          <div class="trust__slider">
+          <div class="trust__slider-container">
             <div class="trust__arrow left" style="transform: rotate(0.5turn)">
               <img src="../../assets/images/arrow.svg" />
             </div>
-            <div class="trust__reviews">
-              <img
-                class="trust__review-back"
-                src="../../assets/images/reviews.svg"
-              />
-              <img
-                class="trust__review-back_mobile"
-                src="../../assets/images/reviews-mobile.svg"
-              />
-              <div class="trust__review">
-                <div>
+            <div class="trust__slider swiper mySwiper">
+              <div class="trust__reviews swiper-wrapper">
+                <div class="trust__review swiper-slide">
+                  <div class="trust__review-content">
+                    <img
+                      class="trust__pic"
+                      src="../../assets/images/avatar.png"
+                    />
+                    <div class="trust__text-container">
+                      <p class="trust__text">
+                        I am really impressed by how fast and reliable my
+                        transaction was. It’s nice to have such a service ready
+                        at hand. I was involved throughout the whole process
+                        without intervening too much
+                      </p>
+                      <p class="trust__text name">John Smith</p>
+                    </div>
+                  </div>
                   <img
-                    class="trust__pic"
-                    src="../../assets/images/avatar.png"
+                    class="trust__review-back"
+                    src="../../assets/images/reviews.svg"
+                  />
+                  <img
+                    class="trust__review-back_mobile"
+                    src="../../assets/images/reviews-mobile.svg"
                   />
                 </div>
-                <div class="trust__text-container">
-                  <p class="trust__text">
-                    I am really impressed by how fast and reliable my
-                    transaction was. It’s nice to have such a service ready at
-                    hand. I was involved throughout the whole process without
-                    intervening too much
-                  </p>
-                  <p class="trust__text name">John Smith</p>
+
+                <div class="trust__review swiper-slide">
+                  <div class="trust__review-content">
+                    <img
+                      class="trust__pic"
+                      src="../../assets/images/avatar.png"
+                    />
+                    <div class="trust__text-container">
+                      <p class="trust__text">
+                        I am really impressed by how fast and reliable my
+                        transaction was. It’s nice to have such a service ready
+                        at hand. I was involved throughout the whole process
+                        without intervening too much
+                      </p>
+                      <p class="trust__text name">John Smith</p>
+                    </div>
+                  </div>
+                  <img
+                    class="trust__review-back"
+                    src="../../assets/images/reviews.svg"
+                  />
+                  <img
+                    class="trust__review-back_mobile"
+                    src="../../assets/images/reviews-mobile.svg"
+                  />
+                </div>
+
+                <div class="trust__review swiper-slide">
+                  <div class="trust__review-content">
+                    <img
+                      class="trust__pic"
+                      src="../../assets/images/avatar.png"
+                    />
+                    <div class="trust__text-container">
+                      <p class="trust__text">
+                        I am really impressed by how fast and reliable my
+                        transaction was. It’s nice to have such a service ready
+                        at hand. I was involved throughout the whole process
+                        without intervening too much
+                      </p>
+                      <p class="trust__text name">John Smith</p>
+                    </div>
+                  </div>
+                  <img
+                    class="trust__review-back"
+                    src="../../assets/images/reviews.svg"
+                  />
+                  <img
+                    class="trust__review-back_mobile"
+                    src="../../assets/images/reviews-mobile.svg"
+                  />
                 </div>
               </div>
             </div>
@@ -196,39 +254,47 @@
       <section class="partners section">
         <div class="partners__content content">
           <h2 class="partners__title title">Our partners</h2>
-          <div class="partners__container">
-            <div class="partners__item">
-              <img class="partners__img" src="../../assets/images/itsoft.png" />
-            </div>
-            <div class="partners__item">
-              <img
-                class="partners__img"
-                src="../../assets/images/bonline.png"
-              />
-            </div>
-            <div class="partners__item">
-              <img
-                class="partners__img"
-                src="../../assets/images/worldcom.png"
-              />
-            </div>
-            <div class="partners__item">
-              <img class="partners__img" src="../../assets/images/erps.png" />
-            </div>
-            <div class="partners__item">
-              <img
-                class="partners__img"
-                src="../../assets/images/altservices.png"
-              />
-            </div>
-            <div class="partners__item">
-              <img class="partners__img" src="../../assets/images/anywet.png" />
-            </div>
-            <div class="partners__item">
-              <img
-                class="partners__img"
-                src="../../assets/images/wallypay.png"
-              />
+          <div class="partners__slider swiper secondSwiper">
+            <div class="partners__container swiper-wrapper">
+              <div class="partners__item swiper-slide">
+                <img
+                  class="partners__img"
+                  src="../../assets/images/itsoft.png"
+                />
+              </div>
+              <div class="partners__item swiper-slide">
+                <img
+                  class="partners__img"
+                  src="../../assets/images/bonline.png"
+                />
+              </div>
+              <div class="partners__item swiper-slide">
+                <img
+                  class="partners__img"
+                  src="../../assets/images/worldcom.png"
+                />
+              </div>
+              <div class="partners__item swiper-slide">
+                <img class="partners__img" src="../../assets/images/erps.png" />
+              </div>
+              <div class="partners__item swiper-slide">
+                <img
+                  class="partners__img"
+                  src="../../assets/images/altservices.png"
+                />
+              </div>
+              <div class="partners__item swiper-slide">
+                <img
+                  class="partners__img"
+                  src="../../assets/images/anywet.png"
+                />
+              </div>
+              <div class="partners__item swiper-slide">
+                <img
+                  class="partners__img"
+                  src="../../assets/images/wallypay.png"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -287,6 +353,7 @@
           </div>
         </div>
       </footer>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     </div>
   </body>
 </html>
