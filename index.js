@@ -145,21 +145,33 @@ if (more) {
 
 document.querySelectorAll('.team__col').forEach((el) =>
   el.addEventListener('click', (event) => {
-    if (event.target.id == 'frontend') {
+    if (
+      event.target.id == 'frontend' ||
+      event.target.classList.contains('team__arrow_frontend')
+    ) {
       document.querySelector('.frontend').classList.toggle('active');
       document
         .querySelector('.team__arrow_frontend')
         .classList.toggle('active');
     }
-    if (event.target.id == 'backend') {
+    if (
+      event.target.id == 'backend' ||
+      event.target.classList.contains('team__arrow_backend')
+    ) {
       document.querySelector('.backend').classList.toggle('active');
-      document.querySelector('.team__arrow_backend').classList.toggle('active');
+      document.querySelector('team__arrow_backend').classList.toggle('active');
     }
-    if (event.target.id == 'mobile') {
+    if (
+      event.target.id == 'mobile' ||
+      event.target.classList.contains('.team__arrow_mobile')
+    ) {
       document.querySelector('.mobile').classList.toggle('active');
       document.querySelector('.team__arrow_mobile').classList.toggle('active');
     }
-    if (event.target.id == 'database') {
+    if (
+      event.target.id == 'database' ||
+      event.target.classList.contains('team__arrow_database')
+    ) {
       document.querySelector('.database').classList.toggle('active');
       document
         .querySelector('.team__arrow_database')
