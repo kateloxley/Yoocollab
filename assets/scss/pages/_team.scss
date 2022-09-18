@@ -167,21 +167,23 @@
     font-weight: 800;
     width: 16px;
     height: 16px;
-    cursor: pointer;
   }
   &__minus {
     border: 2px solid $grey-color;
     color: $grey-color;
+    cursor: default;
   }
   &__plus {
     border: 2px solid $black-color;
     color: $white-color;
     background: $black-color;
+    cursor: pointer;
   }
   &__minus_active {
     border: 2px solid $black-color;
     color: $white-color;
     background: $black-color;
+    cursor: pointer;
   }
   &__clear {
     display: flex;
@@ -268,6 +270,8 @@
 
 .contact-details {
   position: fixed;
+  top: 0;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -282,8 +286,10 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
+    height: 100%;
     @media (max-width: 720px) {
       padding: 16px;
+      width: 100%;
     }
   }
   &__onsubmit-container {
@@ -296,6 +302,9 @@
     background: $dark-background;
     transition: 0.3s all;
     padding: 40px 120px;
+    @media (max-width: 720px) {
+      padding: 20px;
+    }
   }
   &__onsubmit-message {
     color: $white-color;
@@ -304,6 +313,10 @@
     line-height: 61px;
     text-align: center;
     max-width: 369px;
+    @media (max-width: 720px) {
+      font-size: 24px;
+      line-height: 31px;
+    }
   }
   &__content {
     display: flex;
@@ -311,14 +324,13 @@
     position: relative;
     background: $dark-background;
     max-width: 954px;
-    max-height: 730px;
+    max-height: 988px;
     padding: 40px 90px;
     width: 100%;
     height: 100%;
     overflow: scroll;
     @media (max-width: 720px) {
-      //   max-height: unset;
-      padding: 42px 24px 32px 24px;
+      padding: 52px 24px;
     }
   }
   &__onsubmit-container::-webkit-scrollbar,
@@ -329,7 +341,13 @@
     background: $dark-background;
   }
   &__input {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    max-width: 565px;
+    @media (max-width: 720px) {
+      margin-bottom: 14px;
+      max-width: unset;
+      width: 100%;
+    }
   }
   &__label {
     @media (max-width: 720px) {
@@ -340,6 +358,7 @@
   }
   &__textarea {
     resize: none;
+    margin-bottom: 32px;
   }
   &__title,
   &__text,
@@ -360,6 +379,9 @@
       line-height: 18px;
       margin-top: 8px;
     }
+  }
+  &__btn {
+    max-width: 135px;
   }
   &__close {
     display: block;
@@ -404,8 +426,9 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
   position: fixed;
+  top: 0;
+  bottom: 0;
   z-index: 300;
   background: rgba(0, 0, 0, 0.6);
   transition: ease-in 0.3s;

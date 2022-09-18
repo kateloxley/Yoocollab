@@ -207,7 +207,6 @@ const contactDetails = document.querySelector('.contact-details');
 
 if (contactDetails) {
   contactDetails.addEventListener('click', (event) => {
-    console.log(event.target);
     if (
       event.target.classList.contains('active') ||
       event.target.classList.contains('contact-details__close')
@@ -279,4 +278,48 @@ if (dropArea) {
   dropArea.addEventListener('drop', handlerFunction, false);
   dropArea.addEventListener('dragover', dragOverHandler);
   dropArea.addEventListener('drop', dropHandler);
+}
+
+const minus = document.querySelectorAll('.team__minus');
+const plus = document.querySelectorAll('.team__plus');
+const quantityNumber = document.querySelectorAll('.team__number');
+
+if (quantityNumber) {
+  quantityNumber.forEach((item) => {
+    item.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+      }
+    });
+  });
+
+  const minusActive = (item) => {
+    if (item.parentNode.querySelector('input').value > '0') {
+      item.parentNode
+        .querySelector('.team__minus')
+        .classList.add('team__minus_active');
+    } else {
+      item.parentNode
+        .querySelector('.team__minus')
+        .classList.remove('team__minus_active');
+    }
+  };
+
+  minus.forEach((item) => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (item.parentNode.querySelector('input').value > '0') {
+        item.nextElementSibling.stepDown();
+        minusActive(item);
+      }
+    });
+  });
+
+  plus.forEach((item) => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault();
+      item.previousElementSibling.stepUp();
+      minusActive(item);
+    });
+  });
 }
